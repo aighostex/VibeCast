@@ -79,6 +79,7 @@ body{
     font-size: 24px;
     font-weight: 500;
     margin-top: 0;
+    color: var(--grey);
 
 }
 .hero .buttons{
@@ -87,7 +88,7 @@ body{
 .hero .connect,
 .hero .demo{
     margin: 0 10px;
-    padding: 12px 18px;
+    padding: 12px 40px;
     font-size: 20px;
     font-weight: 400;
     border: none;
@@ -98,6 +99,7 @@ body{
 .hero .connect{
     background-color: var(--purple);
     color: var(--off-white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 .hero .demo{
     background-color: var(--white);
