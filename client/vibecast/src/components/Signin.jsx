@@ -6,8 +6,12 @@ import './Signin.css'
 
 function Signin() {
     const [showPassword, setShowPassword] = useState(false);
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+    }
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -28,15 +32,15 @@ function Signin() {
                 <p className="sign-in-text">Sign in to access your insights</p>
 
             <div className="login-card">
-                <form className="login-form" onSubmit={e => e.preventDefault()}>
+                <form className="login-form" onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="email">Email or Username</label>
                         <input
                             type="text"
                             id="email"
                             placeholder="you@example.com"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)} />
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)} />
                     </div>
 
                     <div className="form-group password-group">
