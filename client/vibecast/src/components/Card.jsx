@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from '/src/assets/Link.svg';
 import '/src/pages/LandingPage/LandingPage.css';
+
+
 const Card = () => {
   return (
     <div className='workcards'>
