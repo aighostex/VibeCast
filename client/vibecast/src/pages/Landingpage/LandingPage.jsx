@@ -1,21 +1,18 @@
 import React, { useState } from 'react';
 import vibeLogo from '/src/assets/vibelogo.svg';
 import Card from '../../components/Card';
+import { subscribers } from '../../constants/Users';
 import Keyfeatures from '../../components/Keyfeatures';
-import Youtubeauth from '../../components/Youtubeauth';
+import Demo from '../../components/Demo';
+import Pricing from '../../components/Pricing';
+
 import Signin from '../../components/Signin';
 import './LandingPage.css';
 
 
 
 
-const users = [
-  { initials: 'AC', name: 'Alex Chen', bgColor: '#FFD9D9', textColor: '#CD0000' },
-  { initials: 'MR', name: 'Maria Rodriguez', bgColor: '#C9F4ED', textColor: '#558E85' },
-  { initials: 'SR', name: 'Salami Rasheed', bgColor: '#FFCAEA', textColor: '#FF28A9' },
-  { initials: 'BS', name: 'Bob Smith', bgColor: '#FFF6D3', textColor: '#FFCD04' },
-  { initials: 'SJ', name: 'Sarah Johnson', bgColor: '#DFD0FF', textColor: '#672FE0' },
-];
+
 
 
 
@@ -62,7 +59,7 @@ const handleOAuth = () => {
         {loading ? 'Connecting...' : connected ? 'Connected!' : 'Connect to My YouTube Channel'}
       </button>
         {/* <Youtubeauth /> */}
-        <button className="demo">Try Live Demo</button>
+        <button className="demobtn">Try Live Demo</button>
       </div>
       <p className="login-link">Already have an account? <a href='#'>Log in</a></p>
     </section>
@@ -71,7 +68,7 @@ const handleOAuth = () => {
     <section className="creators">
       <p>Over 4,000 creators use Vibecast daily</p>
       <div className="user-list">
-        {users.map((user, index) => (
+        {subscribers.map((user, index) => (
           <div key={index} className="user">
             <div
               className="avatar"
@@ -90,12 +87,14 @@ const handleOAuth = () => {
 
     {/* How it works */}
     <section className='howitworks'>
-        <h1>How it Works</h1>
+        <h1 className='font-[800]'>How it Works</h1>
         <p>Vibe cast makes it easy to understand your audience across <br /> all platforms.</p>
     </section>
     {/* usage stepsxc */}
     <Card />
     <Keyfeatures />
+    <Demo />
+    <Pricing />
    </div>
   )
 }

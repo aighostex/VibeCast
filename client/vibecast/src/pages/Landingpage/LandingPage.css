@@ -93,7 +93,7 @@ body{
     margin: 20px 0;
 }
 .hero .connect,
-.hero .demo{
+.hero .demobtn{
     margin: 0 10px;
     padding: 12px 40px;
     font-size: 20px;
@@ -108,7 +108,7 @@ body{
     color: var(--off-white);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
-.hero .demo{
+.hero .demobtn{
     background-color: var(--white);
     color: var(--purple);
     border: var(--purple-text) 1px solid;
@@ -271,4 +271,5 @@ body{
     font-size: 24px;
     color: var(--text);
     font-weight: 300;
+    margin-top: 20px;
 }
