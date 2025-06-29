@@ -8,7 +8,7 @@ function Keyfeatures() {
       <h1 className="keyf">Key Features</h1>
       <p className='keyf1'>Powerful analytics to help you understand your audience better</p>
 
-      <div className="features">
+      <div className="grid sm:grid-cols-2 gap-5">
         <div className='feat'>
             <img src="/src/assets/analytics.svg" alt="" />
         </div>

@@ -4,7 +4,7 @@ import '/src/pages/LandingPage/LandingPage.css';
 
 const Card = () => {
   return (
-    <div className='workcards'>
+    <div className='grid md:grid-cols-3 gap-5'>
         <section className='workcard'>
             <div className='icon'>
                 <img src='/src/assets/Link.svg' alt="" srcset="" />

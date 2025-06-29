@@ -1,2 +1,16 @@
 @import "tailwindcss";
 
+@layer components {
+    .p1{
+        @apply text-[40px] text-[#632dd9] font-[700]
+    }
+    .pdiv{
+        @apply bg-[#fafafa] rounded-[20px] flex flex-col justify-center text-center
+    }
+    .pstory{
+        @apply text-[24px] font-[500] text-[#6b6b6b] mb-10
+    }
+    .p2{
+        @apply text-[20px] text-[#6b6b6b] font-[500]
+    }
+}

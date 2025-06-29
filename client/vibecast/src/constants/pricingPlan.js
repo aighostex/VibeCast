@@ -21,6 +21,7 @@ export const pricingPlans = [
         id: 2,
         name: 'Pro',
         price: 29,
+        duration: '/Month',
         description:'For growing creators who need more insights.',
 
         features:[
@@ -41,6 +42,7 @@ export const pricingPlans = [
         id: 3,
         name: 'Enterprise',
         price: 99,
+        duration: '/Month',
         description: 'For established creators and teams.',
 
         features:[
