@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: process.env.VITE_BASE_PATH || "/VibeCast",
   server: {
     port: 3000,
     allowedHosts: true
