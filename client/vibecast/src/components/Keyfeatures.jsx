@@ -4,7 +4,7 @@ import '/src/pages/LandingPage/LandingPage.css';
 
 function Keyfeatures() {
   return (
-    <div className='keyfeat'>
+    <div id='features' className='keyfeat pt-30'>
       <h1 className="keyf">Key Features</h1>
       <p className='keyf1'>Powerful analytics to help you understand your audience better</p>
 

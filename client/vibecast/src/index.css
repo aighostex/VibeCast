@@ -13,4 +13,7 @@
     .p2{
         @apply text-[20px] text-[#6b6b6b] font-[500]
     }
+    .socials{
+        @apply text-[#6B6B6B] w-8 h-8
+    }
 }

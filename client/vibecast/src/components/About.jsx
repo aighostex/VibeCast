@@ -1,10 +1,11 @@
 import React from 'react'
 import { values } from '../constants/ourValues';
 import { ourTeam } from '../constants/ourTeam';
+import { MdOutlineRocketLaunch } from 'react-icons/md';
 
 function About() {
   return (
-    <div className='bg-[#fafafa] mt-40 pt-30 w-full pb-40'>
+    <div id='about' className='bg-[#fafafa] mt-40 pt-30 w-full pb-40'>
         <h1 className='text-[60px] font-[800] text-center'>About Vibecast</h1>
         <p className='text-[32px] font-[500] text-center mt-3 text-[#6b6b6b]'>We're on a mission to help YouTube creators understand and <br /> grow their audience.</p>
 
@@ -40,14 +41,14 @@ function About() {
             </div>
         </div>
         <button type="button" className='bg-[#632dd9] text-[20px] text-[#f5f5f5] cursor-pointer w-[379px] h-[54px] 
-        rounded-[8px] mt-30 drop-shadow-2xl hover:bg-[#ffffff] hover:text-[#6b6b6b] hover:border-0'>Learn More About Our Journey</button>
+        rounded-[8px] mt-30 drop-shadow-2xl hover:bg-white hover:text-[#6b6b6b] hover:border-0'>Learn More About Our Journey</button>
 
         {/* Our Values */}
         <div>
             <h2 className='text-center text-[32px] font-[800] mt-32'>Our Values</h2>
             <div className='grid md:grid-cols-3 gap-8 mt-7'>
                 {values.map((value, index)=>(
-                    <div key={index} className='border rounded-[20px] p-[30px] border-[#C4BEBE]'>
+                    <div key={index} className='border rounded-[20px] p-[30px] border-[#C4BEBE] bg-white'>
                         <div className='flex justify-center items-center bg-[#632dd9] w-[60px] h-[60px] rounded-[10px] mb-5'>
                             <img src={value.icon} alt="" srcset="" />
                         </div>
@@ -62,7 +63,7 @@ function About() {
             <h2 className='text-center text-[32px] font-[800] mt-20'>Meet Our Team</h2>
             <div className='grid md:grid-cols-3 gap-8'>
                 {ourTeam.map((team, index) => (
-                    <div key={index} className='border rounded-[20px] p-[30px] border-[#C4BEBE] flex flex-col items-center mt-20'>
+                    <div key={index} className='border rounded-[20px] p-[30px] border-[#C4BEBE] flex flex-col items-center mt-20 bg-white'>
                         <div
                         className='flex justify-center items-center rounded-full text-[36px] font-[700] w-[120px] h-[120px] mb-5'
                         style={{ backgroundColor: team.bgColor, color: team.textColor }}

@@ -8,28 +8,28 @@ const Pricing = () => {
         return classes.filter(Boolean).join(" ");
     }
   return (
-    <div className='text-center mt-40'>
+    <div id='pricing' className='text-center mt-40 pt-30'>
       <h1 className='text-[60px] font-[800] text-[#1e1e1e]'>Simple, Transparent Pricing</h1>
       <p className='text-[32px] font-[500] text-[#6b6b6b]' >Choose the plan that's right for your creator journey</p>
 
       {/* plans */}
       <div className='grid md:grid-cols-3 gap-8 text-left mt-10'>
         {pricingPlans.map((plan)=>(
-            <div key={plan.id} className={classNames(plan?.mostPopular ? 'border rounded-2xl p-10 border-[#9367F5] shadow-xl hover:scale-105': 'border rounded-2xl p-10', 'mt-15')}>
+            <div key={plan.id} className={classNames(plan?.mostPopular ? 'border rounded-2xl p-10 pt-0 border-[#9367F5] shadow-xl hover:scale-105': 'border rounded-2xl p-10', 'mt-15')}>
                 <div className='mb-8'>
-                    <div className='relative top-[-64px] left-[25%] text-[20px] text-[#ffffff]'>
-                    <div className={classNames(plan.mostPopular ? ' bg-[#9367F5] w-[200px] h-[45.07px] rounded-[30px] flex items-center justify-center': '')}>{plan.mostPopular ? 'Most Popular':''}</div>
+                    <div className='relative top-[-1.4rem] left-[25%] right-[30%] text-[20px] text-[#ffffff]'>
+                    <div className={classNames(plan.mostPopular ? ' bg-[#9367F5] w-fit h-[45.07px] rounded-[30px] flex items-center justify-center pl-10 pr-10': '')}>{plan.mostPopular ? 'Most Popular':''}</div>
                     </div>
                     <h3 className='text-3xl font-[500]'>{plan.name}</h3>
-                    <span className='text-[50px] font-[700] '>${plan.price} <span className='text-[24px] text-[#6B6B6B]'>{plan.duration}</span></span>
+                    <span className='text-[50px] font-[700] '>${plan.price}<span className='text-[24px] text-[#6B6B6B]'>{plan.duration}</span></span>
                     <p className='text-[18px] text-[#6B6B6B]'>{plan.description}</p>
                 </div>
 
                 <ul className='leading-15'>
                     {plan?.features?.map((feature )=>(
-                        <li  className='text-[18px] text-[#6B6B6B] flex gap-x-4 '>
-                            <FaCheck className='w-[35px] h-[35px] text-[#07E877]'/>
-                            {feature}</li>
+                        <li  className='text-[18px] text-[#6B6B6B] flex gap-4'>
+                        <FaCheck className='w-[35px] h-[35px] text-[#07E877] mt-3'/>
+                        {feature}</li>
                     ))}
                 </ul>
                 <button className={classNames(plan.mostPopular ? ' bg-[#632dd9] text-[20px] w-full h-[50px] rounded-[8px] mt-5 text-[#f5f5f5]' : 
