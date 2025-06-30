@@ -1,5 +1,6 @@
 import React from 'react'
 import { pricingPlans } from '../constants/pricingPlan';
+import { FaCheck } from 'react-icons/fa';
 
 
 const Pricing = () => {
@@ -25,8 +26,10 @@ const Pricing = () => {
                 </div>
 
                 <ul className='leading-15'>
-                    {plan.features.map((feature, index)=>(
-                        <li key={index} className='text-[18px] text-[#6B6B6B]'>$ {feature}</li>
+                    {plan?.features?.map((feature )=>(
+                        <li  className='text-[18px] text-[#6B6B6B] flex gap-x-4 '>
+                            <FaCheck className='w-[35px] h-[35px] text-[#07E877]'/>
+                            {feature}</li>
                     ))}
                 </ul>
                 <button className={classNames(plan.mostPopular ? ' bg-[#632dd9] text-[20px] w-full h-[50px] rounded-[8px] mt-5 text-[#f5f5f5]' : 
