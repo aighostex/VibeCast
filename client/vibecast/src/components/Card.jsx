@@ -1,5 +1,4 @@
 import React from 'react'
-// import '/src/pages/LandingPage/LandingPage.css';
 import { FaYoutube, FaArrowRight, FaChartBar,} from 'react-icons/fa';
 import { FiLink } from 'react-icons/fi';
 import { FaArrowTrendUp } from 'react-icons/fa6';
