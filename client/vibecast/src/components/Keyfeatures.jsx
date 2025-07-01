@@ -1,5 +1,4 @@
 import React from 'react'
-import '/src/pages/LandingPage/LandingPage.css';
 
 
 function Keyfeatures() {
