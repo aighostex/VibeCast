@@ -8,7 +8,7 @@ const Pricing = () => {
         return classes.filter(Boolean).join(" ");
     }
   return (
-    <div id='pricing' className='text-center mt-40 pt-30'>
+    <div id='pricing' className='text-center mt-40 pt-30 pl-8 pr-8'>
       <h1 className='text-[60px] font-[800] text-[#1e1e1e]'>Simple, Transparent Pricing</h1>
       <p className='text-[32px] font-[500] text-[#6b6b6b]' >Choose the plan that's right for your creator journey</p>
 

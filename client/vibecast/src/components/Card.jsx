@@ -7,7 +7,7 @@ import { FaArrowTrendUp } from 'react-icons/fa6';
 
 const Card = () => {
   return (
-    <div className='grid md:grid-cols-3 gap-2'>
+    <div className='grid md:grid-cols-3 gap-2 pr-8 pl-8'>
         <section className='workcard'>
             <div className='icon'>
                 <FiLink className='text-white h-9 w-9' />

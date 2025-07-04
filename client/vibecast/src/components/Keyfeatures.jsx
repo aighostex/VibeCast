@@ -7,7 +7,7 @@ import growth from '/src/assets/growth.svg'
 
 function Keyfeatures() {
   return (
-    <div id='features' className='keyfeat pt-30'>
+    <div id='features' className='keyfeat pt-30 pl-8 pr-8'>
       <h1 className="keyf">Key Features</h1>
       <p className='keyf1'>Powerful analytics to help you understand your audience better</p>
 

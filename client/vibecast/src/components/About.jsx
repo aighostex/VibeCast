@@ -5,7 +5,7 @@ import { MdOutlineRocketLaunch } from 'react-icons/md';
 
 function About() {
   return (
-    <div id='about' className='bg-[#fafafa] mt-40 pt-30 w-full pb-40'>
+    <div id='about' className='bg-[#fafafa] mt-40 pt-30 w-full pb-40 pl-8 pr-8'>
         <h1 className='text-[60px] font-[800] text-center'>About Vibecast</h1>
         <p className='text-[32px] font-[500] text-center mt-3 text-[#6b6b6b]'>We're on a mission to help YouTube creators understand and <br /> grow their audience.</p>
 
@@ -58,6 +58,7 @@ function About() {
                 ))}
             </div>
         </div>
+        
         {/* Meet Our team */}
         <div>
             <h2 className='text-center text-[32px] font-[800] mt-20'>Meet Our Team</h2>
