@@ -1,6 +1,7 @@
 import React from 'react'
 import { pricingPlans } from '../constants/pricingPlan';
 import { FaCheck } from 'react-icons/fa';
+import { CheckIcon } from 'lucide-react';
 
 
 const Pricing = () => {
@@ -28,7 +29,7 @@ const Pricing = () => {
                 <ul className='leading-15'>
                     {plan?.features?.map((feature )=>(
                         <li  className='text-[18px] text-[#6B6B6B] flex gap-4'>
-                        <FaCheck className='w-[35px] h-[35px] text-[#07E877] mt-3'/>
+                          <CheckIcon className='w-[35px] h-[35px] text-[#07E877] mt-3' />
                         {feature}</li>
                     ))}
                 </ul>

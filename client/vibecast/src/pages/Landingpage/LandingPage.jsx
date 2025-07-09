@@ -99,7 +99,8 @@ const handleOAuth = () => {
           <p className='text-[50px] font-[800]'>Ready to understand your audience better?</p>
           <p className='text-[32px] text-[#6B6B6B] font-[500]'>Join thousands of creators who use Vibecast to grow their channels smarter.</p>
 
-          <button className="cursor-pointer bg-[#632DD9] w-[400px] h-[50px] text-[#F5F5F5] rounded-[8px] mt-14 text-[20px] shadow-xl hover:scale-105" onClick={handleOAuth} disabled={loading || connected}>
+          <button className="cursor-pointer bg-[#632DD9] w-[400px] h-[50px] text-[#F5F5F5] rounded-[8px] mt-14 text-[20px] 
+          shadow-xl hover:scale-105" onClick={handleOAuth} disabled={loading || connected}>
             {loading ? 'Connecting...' : connected ? 'Connected!' : 'Connect to My YouTube Channel'}
           </button>
         </div>

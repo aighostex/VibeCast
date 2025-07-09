@@ -52,8 +52,8 @@ function About() {
                         <div className='flex justify-center items-center bg-[#632dd9] w-[60px] h-[60px] rounded-[10px] mb-5'>
                             <img src={value.icon} alt="" srcset="" />
                         </div>
-                        <h3 className='text-[24px] font-[600] text-[#1E1E1E] mb-3'>{value.heading}</h3>
-                        <p className='text-[20px] text-[#6B6B6B] font-[500]'>{value.message}</p>
+                        <h3 className='text-2xl font-[600] text-[#1E1E1E] mb-3'>{value.heading}</h3>
+                        <p className='text-[1rem] text-[#6B6B6B] font-[500]'>{value.message}</p>
                     </div>
                 ))}
             </div>
@@ -61,12 +61,12 @@ function About() {
         
         {/* Meet Our team */}
         <div>
-            <h2 className='text-center text-[32px] font-[800] mt-20'>Meet Our Team</h2>
+            <h2 className='text-center text-[2rem] font-[800] mt-20'>Meet Our Team</h2>
             <div className='grid md:grid-cols-3 gap-8'>
                 {ourTeam.map((team, index) => (
                     <div key={index} className='border rounded-[20px] p-[30px] border-[#C4BEBE] flex flex-col items-center mt-20 bg-white'>
                         <div
-                        className='flex justify-center items-center rounded-full text-[36px] font-[700] w-[120px] h-[120px] mb-5'
+                        className='flex justify-center items-center rounded-full text-4xl font-[700] w-[120px] h-[120px] mb-5'
                         style={{ backgroundColor: team.bgColor, color: team.textColor }}
                         >
                             {team.intials}

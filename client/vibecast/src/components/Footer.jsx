@@ -34,7 +34,7 @@ const Footer = () => {
           ))}
 
           {/* coyright */}
-          <p className='text-sm mt-10'>&copy; {year} Vibe Cast. All Rights Reserved</p>
+          <p className='text-sm mt-10 '>&copy; {year} Vibe Cast. All Rights Reserved</p>
     </div>
   )
 }

@@ -3,13 +3,11 @@ import React from 'react';
 import LandingPage from './pages/Landingpage/LandingPage';
 
 
-
 function App(){
 
   return (
     <>
     <LandingPage />
-   
     </>
   )
 }
