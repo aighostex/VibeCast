@@ -12,7 +12,8 @@ const Footer = () => {
     setYear(new Date().getFullYear());
   }, []);
   return (
-    <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-8 border-t-1 bg-[#FAFAFA] border-[#ADADAD] pl-9 p-3 pt-15 leading-20'>
+    <div className='bg-[#FAFAFA] border-[#ADADAD] border-t-1'>
+    <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-8 pl-9 p-3 pt-15 leading-20'>
       <div>
        <a href="/"><img src={vibeLogo} alt="" srcset="" className='h-[70px] w-[260px]'/></a>
           <p className='text-2xl leading-9 mt-10 text-[#6b6b6b] font-[500]'>AI-powered YouTube <br /> comment insights for <br /> creators.</p>
@@ -34,7 +35,9 @@ const Footer = () => {
           ))}
 
           {/* coyright */}
-          <p className='text-sm mt-10 '>&copy; {year} Vibe Cast. All Rights Reserved</p>
+          
+    </div>
+    <p className='text-sm mt-10 text-center pb-6'>&copy; {year} Vibe Cast. All Rights Reserved</p>
     </div>
   )
 }
